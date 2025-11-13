@@ -29,11 +29,16 @@ public class Phone {
         System.out.println("Akun tila: " + batteryLevel + "% (" + batteryCapacity + " mAh)");
     }
 
+        // Metodi joka kertoo merkin
+    public void showBrand() {
+        System.out.println("Puhelimen merkki on: " + brand);
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Phone phone = new Phone("Samsung", 5000);
 
-        System.out.println("Puhelin: " + phone.brand);
+        phone.showBrand();
         phone.showBatteryStatus();
 
         while (true) {
