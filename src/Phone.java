@@ -21,7 +21,7 @@ public class Phone {
     public void charge(int minutes) {
         int chargeAmount = minutes / 3; // latautuu 1% per 3 minuuttia
         batteryLevel += chargeAmount;
-        if (batteryLevel > 100) batteryLevel = 80;
+        if (batteryLevel > 100) batteryLevel = 100; // korjattu 80 -> 100
         System.out.println("Latasit puhelinta " + minutes + " min. Akku nyt " + batteryLevel + "%");
     }
 
