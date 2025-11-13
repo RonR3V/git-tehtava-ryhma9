@@ -8,7 +8,7 @@ public class Phone {
     public Phone(String brand, int batteryCapacity) {
         this.brand = brand;
         this.batteryCapacity = batteryCapacity;
-        this.batteryLevel = 100; // uusi puhelin täyteen ladattu
+        this.batteryLevel = 80; // uusi puhelin täyteen ladattu
     }
 
     public void usePhone(int minutes) {
@@ -21,7 +21,7 @@ public class Phone {
     public void charge(int minutes) {
         int chargeAmount = minutes / 3; // latautuu 1% per 3 minuuttia
         batteryLevel += chargeAmount;
-        if (batteryLevel > 100) batteryLevel = 100;
+        if (batteryLevel > 100) batteryLevel = 80;
         System.out.println("Latasit puhelinta " + minutes + " min. Akku nyt " + batteryLevel + "%");
     }
 
@@ -69,3 +69,4 @@ public class Phone {
         scanner.close();
     }
 }
+
