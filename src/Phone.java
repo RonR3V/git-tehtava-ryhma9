@@ -34,6 +34,7 @@ public class Phone {
         System.out.println("Puhelimen merkki on: " + brand);
     }
 
+        //Main alkaa
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Phone phone = new Phone("Samsung", 5000);
@@ -73,5 +74,6 @@ public class Phone {
         System.out.println("Ohjelma suljetaan. Akku " + phone.batteryLevel + "%");
         scanner.close();
     }
+    //Main päättyy
 }
 
