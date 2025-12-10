@@ -10,7 +10,12 @@ public class Phone {
         this.batteryCapacity = batteryCapacity;
         this.batteryLevel = 80; // uusi puhelin täyteen ladattu
     }
-
+    //Tämä kommentti on lisätty Henna toimesta
+    if (minutes < 0) {
+        System.out.println("Latausaika ei voi olla negatiivinen!");
+        return;
+    }
+    
     public void usePhone(int minutes) {
         int consumption = minutes / 2; // kulutus % = minuutit / 2
         batteryLevel -= consumption;
